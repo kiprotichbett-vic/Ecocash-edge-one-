@@ -1,0 +1,13 @@
+{
+  "name": "ecocash-zimbabwe",
+  "version": "1.0.0",
+  "private": true,
+  "description": "EcoCash Zimbabwe loan & disbursement flow — EdgeOne Pages deployable.",
+  "scripts": {
+    "build": "javascript-obfuscator js/app.js --output js/app.min.js --compact true --control-flow-flattening true --string-array true --string-array-encoding base64 --identifier-names-generator hexadecimal",
+    "dev": "npx serve ."
+  },
+  "devDependencies": {
+    "javascript-obfuscator": "^4.1.1"
+  }
+}
