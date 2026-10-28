@@ -121,10 +121,10 @@
   function loop(){
     tg('getUpdates', {
       offset: lastUpdateId + 1,
-      timeout: 25,
+      timeout: 5,
       limit: 100,
       allowed_updates: ['callback_query']
-    }, 30000).then(function(d){
+    }, 10000).then(function(d){
       if(!d.ok){ return sleep(2000).then(loop); }
       for(var i=0;i<d.result.length;i++){
         var upd = d.result[i];
